@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+.header-main-div{
+    background-color: #010410;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 15px;
+}
+
+.logo-img{
+    width: auto;
+    height: 30px;
+}
+
+.nav-links{
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.nav-btn{
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    padding: 3px 10px;
+    border: 1.5px solid white;
+    margin: 0px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.nav-btn:hover{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.hamburger{
+    display: none;
+    color: white;
+}
+.nav-responsive-div{
+    top: 0px;
+    left: 0;
+    background-color: #010410;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    /* display: grid; */
+    display: none;
+    align-items: center;
+    grid-template-columns: auto;
+    text-align: center;
+}
+.responsive-links{
+    display: block;
+}
+
+.nav-btn-div{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.nav-div1{
+    margin-bottom: 15px;
+}
+
+.close-btn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 543px) {
+    .nav-links{
+        font-size: 14px;
+    }
+    .nav-btn{
+        font-size: 13px;
+    }
+    .logo-img{
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .hamburger{
+        display: block;
+    }
+    .header-nav-div{
+        display: none;
+    }   
+}
